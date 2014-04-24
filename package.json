@@ -44,6 +44,7 @@
     "madlib-browser-cookie": "^0.1.0",
     "madlib-console": "^0.1.2",
     "madlib-object-utils": "^0.1.2",
+    "madlib-settings": "^0.1.5",
     "madlib-shim-easyxdm": "^2.4.18-25",
     "madlib-xhr": "^0.1.8",
     "madlib-xhr-xdm": "^0.1.12"

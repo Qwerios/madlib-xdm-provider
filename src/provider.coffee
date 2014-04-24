@@ -2,6 +2,7 @@
     if typeof exports is "object"
         module.exports = factory(
             require "madlib-console"
+            require "madlib-settings"
             require "madlib-xhr"
             require "madlib-shim-easyxdm"
             require "madlib-browser-cookie"
@@ -9,11 +10,12 @@
     else if typeof define is "function" and define.amd
         define( [
             "madlib-console"
+            "madlib-settings"
             "madlib-xhr"
             "madlib-shim-easyxdm"
             "madlib-browser-cookie"
         ], factory )
-)( ( console, XHR, easyXDM, ppkCookie ) ->
+)( ( console, settings, XHR, easyXDMShim, ppkCookie ) ->
 
     ###*
     #   The XDM Provider makes a same host ajax call using the parameters provided
@@ -55,7 +57,7 @@
                                 statusText: "Forbidden"
                             )
                         else
-                            xhr = new XHR()
+                            xhr = new XHR( settings )
 
                             # Set custom timeout if provided
                             #
@@ -117,8 +119,10 @@
                             ppkCookie.deleteCookie( name )
 
             # Create the XDM Provider side of the RPC channel
+            # easyXDM is not a CommonJS module. The shim we required ensures
+            # the global object is available
             #
-            @remote = new easyXDM.Rpc( options, rpcChannel )
+            @remote = new window.easyXDM.Rpc( options, rpcChannel )
 
         ###*
         #   The class constructor. You need to supply your instance of madlib-settings

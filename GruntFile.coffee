@@ -43,7 +43,7 @@ module.exports = ( grunt ) ->
 
             debug:
                 files:
-                    "dist/src/bundle.js": sourceFiles
+                    "dist/src/xdm.js": sourceFiles
 
                 options:
                     browserifyOptions:
