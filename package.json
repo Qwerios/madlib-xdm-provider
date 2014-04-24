@@ -1,0 +1,56 @@
+{
+  "name": "madlib-xdm-provider",
+  "description": "The server-side XDM provider files for madlib-xhr-xdm",
+  "main": "lib/index.js",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qwerios/madlib-xdm-provider.git"
+  },
+  "keywords": [
+    "madlib"
+  ],
+  "browserify": {
+    "transform": [
+      "coffeeify"
+    ]
+  },
+  "author": {
+    "name": "Mark Doeswijk",
+    "email": "mdoeswijk@gmail.com",
+    "url": "https://github.com/Qwerios"
+  },
+  "scripts": {
+    "test": "command -v grunt >/dev/null 2>&1 && grunt test || { echo >&2 'Grunt is not installed'; }",
+    "prepublish": "command -v grunt >/dev/null 2>&1 && grunt || { echo >&2 'Grunt is not installed'; }"
+  },
+  "devDependencies": {
+    "browserify": "~3.23.1",
+    "browserify-shim": "~3.3.2",
+    "chai": "~1.8.1",
+    "coffeeify": "~0.6.0",
+    "grunt": "~0.4.1",
+    "grunt-browserify": "~2.0.1",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-compress": "~0.5.3",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-uglify": "~0.3.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-test": "~0.8.2",
+    "grunt-string-replace": "~0.2.7"
+  },
+  "dependencies": {
+    "madlib-browser-cookie": "^0.1.0",
+    "madlib-console": "^0.1.2",
+    "madlib-object-utils": "^0.1.2",
+    "madlib-shim-easyxdm": "^2.4.18-25",
+    "madlib-xhr": "^0.1.8",
+    "madlib-xhr-xdm": "^0.1.12"
+  },
+  "licenses": [
+    {
+      "type": "BSD"
+    }
+  ]
+}
