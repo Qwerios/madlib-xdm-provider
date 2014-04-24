@@ -23,3 +23,12 @@ $ npm install madlib-xdm-provider --save
 ```
 
 ## usage
+The Cross Domain version of the madlib XHR requires knowledge of the following other madlib modules:
+* [xhr](https://github.com/Qwerios/madlib-xhr)
+* [xhr-xdm](https://github.com/Qwerios/madlib-xhr-xdm)
+* [hostmapping](https://github.com/Qwerios/madlib-hostmapping)
+* [settings](https://github.com/Qwerios/madlib-settings)
+
+Unzip and deploy on your server. Then configure the xdm settings pointing to where you deployed it.
+
+You can check the documentation for [madlib-xhr-xdm](https://github.com/Qwerios/madlib-xhr-xdm) for configuration and usage examples
