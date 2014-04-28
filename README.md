@@ -1,4 +1,6 @@
-# madlib-xdm-provider  [![Build Status](https://travis-ci.org/Qwerios/madlib-xdm-provider.svg?branch=master)](https://travis-ci.org/Qwerios/madlib-xdm-provider)
+# madlib-xdm-provider
+[![Build Status](https://travis-ci.org/Qwerios/madlib-xdm-provider.svg?branch=master)](https://travis-ci.org/Qwerios/madlib-xdm-provider) [![NPM version](https://badge.fury.io/js/madlib-xdm-provider.png)](http://badge.fury.io/js/madlib-xdm-provider) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
 The server-side XDM provider files for madlib-xhr-xdm
 
 
