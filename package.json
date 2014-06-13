@@ -2,7 +2,7 @@
   "name": "madlib-xdm-provider",
   "description": "The server-side XDM provider files for madlib-xhr-xdm",
   "main": "lib/index.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/Qwerios/madlib-xdm-provider.git"
