@@ -2,7 +2,7 @@
   "name": "madlib-xdm-provider",
   "description": "The server-side XDM provider files for madlib-xhr-xdm",
   "main": "lib/index.js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Qwerios/madlib-xdm-provider.git"
@@ -43,11 +43,11 @@
   "dependencies": {
     "madlib-browser-cookie": "^0.1.1",
     "madlib-console": "^0.1.4",
-    "madlib-object-utils": "^0.1.4",
-    "madlib-settings": "^0.1.5",
-    "madlib-shim-easyxdm": "^2.4.19-3",
-    "madlib-xhr": "^0.1.11",
-    "madlib-xhr-xdm": "^0.1.15"
+    "madlib-object-utils": "^0.1.6",
+    "madlib-settings": "^0.1.7",
+    "madlib-shim-easyxdm": "2.4.20-7",
+    "madlib-xhr": "^0.1.21",
+    "madlib-xhr-xdm": "^0.1.21"
   },
   "licenses": [
     {
